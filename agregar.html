@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styleEditar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://bootswatch.com/5/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <title>Agregar</title>
+  </head>
+  <body>
+
+    
+    <div class="main" class="container">
+      <div class="top">
+        <div class="logo"></div>
+        <div class="verBotones">
+          <a href="#prestamosActuales"><div class="btnCuadradoVer">HISTORIAL</div></a>
+          <a href="index.html"><div class="btnCuadradoSalir">SALIR</div></a>
+        </div>
+      </div>
+        
+        <div class="monedas">
+          <div class="contenedorPesos">
+          <h4>CAPITAL ACTUALIZADO EN ARS</h4>
+          <div id="capitalActualizado"></div>
+        </div>
+    
+
+    <div class="contenedorUSD">
+        <h4>CAPITAL ACTUALIZADO EN USD</h4>
+          <div id="capitalActualizadoUSD"></div>
+    </div>
+    </div>
+        
+      
+      <h1 class="display-6">INGRESÁ LOS DATOS DEL NUEVO PRÉSTAMO</h1>
+      <br>
+      <form class="row g-3 needs-validation" novalidate id="prestamoNuevo">
+        <div class="mb-3">
+          <label for="nya" class="form-label" id="Inombre">Nombre y Apellido</label>
+          <input type="text" class="form-control" id="nya" name="nombreyapellido" required>
+          
+          </div>
+        <div class="mb-3">
+          <label for="taza" class="form-label" id="Itaza">Taza de Interés</label>
+          <input type="tel" maxlength="2" class="form-control" id="taza" name="tazaInteres" required>
+          
+          
+        </div>
+        <div class="mb-3">
+          <label for="cuota" class="form-label" id="Icuota">Cuota</label>
+          <input type="tel" maxlength="3" class="form-control" id="cuota" name="cuotas" required>
+          
+        </div>
+        <div class="mb-3">
+            <label for="tipo" class="form-label" id="Imoneda">Moneda</label>
+            <select class="form-select" id="moneda" onchange="cambiarInput()" required>
+              <option value="pesos">Pesos Argentinos</option>
+              <option value="dolares">Dólares</option>   
+            </select>
+            <div id="divSweet"></div>
+         </div>
+        <div class="mb-3" id="inputLimite">
+          <label for="limite" class="form-label" id="Ilimite">Limite</label>
+          <input type="tel" maxlength="7" class="form-control" id="limite" name="limites" placeholder="ARS" required>
+          <input type="tel" maxlength="7" class="form-control" id="limiteUSD" placeholder="USD" name="limitesUSD" required>        
+        </div>
+        
+        <div class="mb-3">
+          <label for="tipo" class="form-label" id="Itipo">Tipo de préstamo</label>
+          <select class="form-select" id="tipo" required>
+            <option value="Personal">Prestamo personal</option>
+            <option value="Hipotecario">Prestamo hipotecario</option>
+            <option value="Prendario">Prestamo prendario</option>
+          </select>
+          
+        </div>
+       
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" id="infoPrestamo" >CARGAR</button>
+          <button class="btn btn-primary" type="reset" id="infoBorrar">BORRAR</button>
+          <div id="completarCampos"></div>
+        </div>
+      </form>
+      <br>
+      
+      <br>
+      <h3>PRESTAMOS INGRESADOS</h3>
+      <br>
+      <div id="todosPrestamos" class="row"> </div> 
+       
+      
+      <h3>HISTORIAL DE PRESTAMOS</h3>
+      <br>
+      <div id="prestamosActuales" class="row">  </div> 
+      
+    </div>
+    <script src="js/agregar.js"></script>
+    <script src="js/prestamo.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </body>
+</html>

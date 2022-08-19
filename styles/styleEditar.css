@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+.main{
+    width: 900px;
+    margin-top: 50px;
+    max-width: calc(80% - 40px);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+       
+}
+.display-6{
+    color: rgb(0, 38, 121);
+}
+
+.logo{
+    margin: 30px 0 30px 0px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../img/logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+
+}
+
+
+section{
+    max-width: calc(100% - 40px);
+    margin:40px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  
+}
+
+
+
+.contenedorBtn{
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding-left:30px
+    
+    
+
+}
+
+.btnCuadradoVer{
+    width: 100px;
+    height: 30px;
+    background-color:rgba(66, 1, 109, 0.781);
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+   
+    
+    
+}
+
+.btnCuadradoVer:hover{
+    background-color:rgba(37, 0, 48, 0.856);
+}
+.verBotones{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.verBotones a {
+    text-decoration:none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+   
+}
+
+.verBotones a:hover{
+    
+    color: white;
+    
+   
+}
+.top{
+    display: flex;
+    flex-direction: row;
+}
+.btnCuadradoAgregar{
+    background-color:rgba(3, 169, 190, 0.5);
+    padding:10px;
+    margin-right: 10px;
+    
+    
+}
+.btnCuadradoAgregar:hover{
+    background-color:rgba(0, 84, 95, 0.856);
+}
+
+.btnCuadradoSalir{
+    height: 30px;
+    width: 100px;
+    background-color:rgba(0, 60, 255, 0.5);
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    
+    
+    
+}
+.btnCuadradoSalir:hover{
+    background-color:rgba(0, 23, 100, 0.815);
+}
+
+.iconoDelete{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/delete.svg);    
+    background-size: contain;
+    background-position: center;
+    float:right;
+    color:rgba(0, 0,0, 0);
+}
+
+.iconoEditar{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/delete.svg);
+    background-size: contain;
+    background-position: center;
+}
+
+#completarCampos {
+    height: 40px;
+    background-color: rgb(255, 0, 128);
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    display: none;
+    margin: 20px auto 20px;
+    padding-left: 10px;
+
+}
+
+#completarTaza, #completarNombre{
+    height: 40px;
+    color: rgb(255, 0, 128);
+    line-height: 40px;
+    display: none;
+    
+}
+#divSweet {
+    height: 40px;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    display: none;
+    font-size: 14px;
+    padding-left:5px;
+    margin:5px 0 0 0;
+    background-color: rgb(0, 140, 196);
+
+}
+
+#capitalActualizadoUSD{
+    height: 25px;
+    color:cadetblue;
+    font-weight: bold;
+    display:block;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    
+    
+}
+#capitalActualizado{
+    height: 25px;
+    color:rgb(120, 95, 160);
+    font-weight: bold;
+    display:"block";
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 25px;
+   
+    
+}
+h4{
+    margin: 0 0 0 0;
+    color: grey;
+}
+.monedas{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0  40px 0;
+}
+
+.contenedorPesos{
+    width: 50%;
+    
+}
+.contenedorUSD{
+    width: 50%;
+   
+}
+#limite{
+    display: block;
+}
+#limiteUSD{
+    display: none;
+}
+.btn-editar{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(0, 178, 248);
+    color:white;
+    line-height: 35px;
+    margin: 0 auto 10px;
+    border: none;
+}
+.btn-editar:hover{
+    
+    background-color: rgb(0, 131, 192);
+}
+    
+
+
+
+

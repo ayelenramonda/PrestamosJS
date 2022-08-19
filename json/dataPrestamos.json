@@ -1,0 +1,75 @@
+[
+    {
+        "id": "1",
+        "nombre": "Juan Gonzalez",
+        "taza": 0,
+        "cuotas": 90,
+        "limite": 2000000,
+        "tipodeprestamo": "Personal",
+        "moneda": "pesos"
+    },
+    {
+        "id": "2",
+        "nombre": "Pedro Ayala",
+        "taza": 0,
+        "cuotas": 120,
+        "limite": 2800000,
+        "tipodeprestamo": "Prendario",
+        "moneda": "pesos"
+    },
+    {
+        "id": "3",
+        "nombre": "María de Mar Lopez",
+        "taza": 0,
+        "cuotas": 90,
+        "limite": 2000000,
+        "tipodeprestamo": "Personal",
+        "moneda": "pesos"
+    },
+    {
+        "id": "4",
+        "nombre": "Clara Delago",
+        "taza": 0,
+        "cuotas": 90,
+        "limite": 1000000,
+        "tipodeprestamo": "Personal",
+        "moneda": "dolares"
+    },
+    {
+        "id": "5",
+        "nombre": "Lucrecia Gomez",
+        "taza": 1.5,
+        "cuotas": 200,
+        "limite": 6000000,
+        "tipodeprestamo": "Hipotcario",
+        "moneda": "pesos"
+    },
+    {
+        "id": "6",
+        "nombre": "Roberto Nostro",
+        "taza": 5,
+        "cuotas": 90,
+        "limite": 2000000,
+        "tipodeprestamo": "Prendario",
+        "moneda": "dolares"
+    },
+    {
+        "id": "7",
+        "nombre": "Diego Rodriguez",
+        "taza": 0,
+        "cuotas": 30,
+        "limite": 400000,
+        "tipodeprestamo": "Prendario",
+        "moneda": "dolares"
+    },
+    {
+        "id": "8",
+        "nombre": "Patricio Montes",
+        "taza": 0,
+        "cuotas": 50,
+        "limite": 2000000,
+        "tipodeprestamo": "Prendario",
+        "moneda": "pesos"
+    }
+
+]
